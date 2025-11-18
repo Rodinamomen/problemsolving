@@ -31,7 +31,5 @@ suspend fun doSelfCancelingJob() = coroutineScope {
 
 // Please change only the "main" function:
 fun main(){
-    var arr = arrayOf(1,2)
-    var arr2 = arr.copyOf()
-    println(arr === arr2)
+    println(twoSum(nums = intArrayOf(3,2,4), target = 6).joinToString())
 }
