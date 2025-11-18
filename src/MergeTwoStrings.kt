@@ -1,4 +1,4 @@
-/*fun mergeTwoStrings(word1: String, word2: String): String {
+fun mergeTwoStrings(word1: String, word2: String): String {
     var result: String = ""
     if (word1.length < word2.length) {
         for (i in word2.indices) {
@@ -24,8 +24,8 @@
         }
     }
     return result
-}*/
-fun mergeTwoStrings(word1: String, word2: String): String {
+}
+/*fun mergeTwoStrings(word1: String, word2: String): String {
     var result =""
     for(i in 0 until maxOf(word1.length, word2.length)){
         if (i < word1.length) result= result.plus(word1[i])
@@ -33,7 +33,7 @@ fun mergeTwoStrings(word1: String, word2: String): String {
     }
     return result
 
-}
+}*/
 fun main() {
     println(mergeTwoStrings("abc", "efg"))
 }
