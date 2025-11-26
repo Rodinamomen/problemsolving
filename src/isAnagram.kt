@@ -22,7 +22,7 @@ fun isAnagram(s: String, t: String): Boolean {
     }else{
         for(i in stringMap.keys){
             if(secondStringMap.keys.contains(i)){
-                if(stringMap.getValue(i) != secondStringMap.get(i)){
+                if(stringMap.getValue(i) != secondStringMap[i]){
                     return false
                 }
             }else{
