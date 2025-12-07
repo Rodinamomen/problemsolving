@@ -9,7 +9,7 @@ class ListNode(var value: Int) {
 }
 
 fun reverseList(head: ListNode?): ListNode? {
-   // create stack to hold values
+ /*  // create stack to hold values
     val stack = Stack<Int>()
     var current = head
     // push values into the stack
@@ -23,7 +23,18 @@ fun reverseList(head: ListNode?): ListNode? {
         ptr?.next  = ListNode(stack.pop())
         ptr= ptr?.next
     }
-    return reversedList.next
+    return reversedList.next*/
+    if (head == null) return null
+    if (head.next == null) return head
+    var prev: ListNode? = null
+    var cur: ListNode? = head
+    while (cur != null) {
+        val next = cur.next
+        cur.next = prev
+        prev = cur
+        cur = next
+    }
+    return prev
 }
 fun main(){
     val list = ListNode(1)
